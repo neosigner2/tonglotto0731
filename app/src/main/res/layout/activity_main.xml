@@ -5,48 +5,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="horizontal"
+    android:background="@drawable/bg1"
     tools:context=".MainActivity">
-
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_red" />
-
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_blue"/>
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_red"/>
-
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_blue"/>
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_red"/>
-
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_blue"/>
-    <View
-        android:layout_width="0px"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_red"/>
-
-
 </LinearLayout>
 
 
