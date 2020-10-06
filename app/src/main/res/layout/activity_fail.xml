@@ -4,15 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FailActivity">
+    tools:context=".ResultActivity">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="통하지않았습니다."
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:text="번호가"
+        android:textSize="50dp"
+        android:fontFamily="@font/euljiro"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintStart_toStartOf="@id/guideLine3"
+        app:layout_constraintTop_toTopOf="@id/guideLine5"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:text="안나왔습니다"
+        android:textSize="50dp"
+        android:fontFamily="@font/euljiro"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toStartOf="@id/guideLine3"
+        app:layout_constraintTop_toBottomOf="@id/title1"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="기운이 통하지 않았습니다."
+        android:textSize="24dp"
+        android:fontFamily="@font/euljiro"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toStartOf="@id/guideLine3"
+        app:layout_constraintTop_toBottomOf="@id/title2"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/subtitleBlue1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="아쉽지만 내일 다시 시도해 주세요."
+        android:textSize="20dp"
+        android:fontFamily="@font/euljiro"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintStart_toStartOf="@id/guideLine3"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"/>
+
+    <TextView
+        android:id="@+id/subtitleBlue2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="하루에 한번만 시도하실 수 있습니다."
+        android:textSize="20dp"
+        android:fontFamily="@font/euljiro"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintStart_toStartOf="@id/guideLine3"
+        app:layout_constraintTop_toBottomOf="@id/subtitleBlue1"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg1"
+        app:layout_constraintTop_toBottomOf="@id/guideLine2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/finishButton"
+        android:text="확인(앱종료)"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlue"
+        android:fontFamily="@font/euljiro"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="36dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        />
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

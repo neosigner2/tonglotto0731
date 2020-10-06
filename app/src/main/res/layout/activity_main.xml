@@ -4,9 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
     android:background="@drawable/bg1"
-    tools:context=".MainActivity">
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="70dp"
+        android:fontFamily="@font/euljiro"
+        android:text="통하고\n있습니다"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/euljiro"
+        android:text="잠시만 기다려 주세요"
+        android:textColor="@color/colorWhite"/>
 </LinearLayout>
 
 
